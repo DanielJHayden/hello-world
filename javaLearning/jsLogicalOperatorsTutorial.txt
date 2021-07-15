@@ -1,0 +1,114 @@
+What's the result of OR?
+importance: 5
+What is the code below going to output?
+
+alert( null || 2 || undefined );
+
+/////
+
+2, OR returns the first truthy value
+
+/////
+
+What's the result of OR'ed alerts?
+importance: 3
+What will the code below output?
+
+alert( alert(1) || 2 || alert(3) );
+
+/////
+
+1, then 2
+
+OR first executes alert(1), then returns undefined, which is falsy.
+2 is evaluated as truthy, returned to alert, and displayed
+3 is not reached.
+
+/////
+
+What is the result of AND?
+importance: 5
+What is this code going to show?
+
+alert( 1 && null && 2 );
+
+/////
+
+null, %% returns the first falsey value
+
+/////
+
+What will this code show?
+
+alert( alert(1) && alert(2) );
+
+/////
+
+1, undefined
+
+alert 1 runs, && evaluates as undefined (falsy), and returns undefined to main alert
+
+/////
+
+The result of OR AND OR
+importance: 5
+What will the result be?
+
+alert( null || 2 && 3 || 4 );
+
+/////
+
+3
+
+&& has higher precedence than ||, evaluates first, returns 3 as last value when no falsy values found
+3 is first truthy value in the OR chain, 3 returned to alert
+
+/////
+
+Check the range between
+importance: 3
+Write an if condition to check that age is between 14 and 90 inclusively.
+
+“Inclusively” means that age can reach the edges 14 or 90.
+
+/////
+
+if (age >= 14 && age <= 90 )
+
+/////
+
+Check the range outside
+importance: 3
+Write an if condition to check that age is NOT between 14 and 90 inclusively.
+
+Create two variants: the first one using NOT !, the second one – without it.
+
+/////
+
+first:
+if (!(age >= 14 && age <= 90 ))
+
+second:
+if (age < 14 || age > 90)
+
+/////
+
+A question about "if"
+importance: 5
+Which of these alerts are going to execute?
+
+What will the results of the expressions be inside if(...)?
+
+if (-1 || 0) alert( 'first' );
+if (-1 && 0) alert( 'second' );
+if (null || -1 && 1) alert( 'third' );
+
+/////
+
+1: (-1), evaluates true, alert runs 'first'
+2: (0), evaluates false, alert does not fire
+3: (1), evaluates true, alert runs 'third'
+
+/////
+
+
