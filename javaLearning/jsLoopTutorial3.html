@@ -1,0 +1,20 @@
+<!-- Now do it with all for loops -->
+
+<!DOCTYPE html>
+<html>
+<script>
+"use strict";
+let divisorIndex
+let primeCheckerStopPoint = prompt('Enter number', '');
+
+for (let primeIndex = 2 ; primeCheckerStopPoint >= primeIndex ; ++primeIndex) {
+  
+  for (divisorIndex = 2 ; primeIndex % divisorIndex ; ++divisorIndex) {}
+  
+  if (primeIndex == divisorIndex) {
+      alert(`${primeIndex} is prime!`)
+  }
+}
+
+</script>
+</html>

@@ -129,11 +129,4 @@ Goals:
 -- and increments after
 --terminate once something = n
 
-let i = 2;
-let n = prompt('Prime Number Check! Enter a number', 2);
-
-for (; i > n ; i++) {
-  if (n % i){
-    alert(i)
-  }
-}
+Will put into own html docs so they're functional in chrome.
