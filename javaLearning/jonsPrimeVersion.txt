@@ -1,0 +1,10 @@
+for (let i = prompt('Enter number', ''); i > 1; i--) {
+	let isPrime = true;
+	for (let j = i - 1; j > 1 && isPrime; j--) 
+	{
+  	if(!(i % j)) {
+    	isPrime = false;
+    }
+	}
+  console.log(isPrime ? `${i} is prime` : `${i} is not prime`);
+}
