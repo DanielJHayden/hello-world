@@ -1,0 +1,14 @@
+Practice Questions
+1. Does PyInputPlus come with the Python Standard Library? \\ no, must pip install it
+
+2. Why is PyInputPlus commonly imported with import pyinputplus as pyip? \\ make shorter name for function you're presumably going to call a bunch
+
+3. What is the difference between inputInt() and inputFloat()? \\  Int accepts and returns integers only. Float accepts ints and floats, returns floats.
+
+4. How can you ensure that the user enters a whole number between 0 and 99 using PyInputPlus? \\ inputInt(min=0,max=99)
+
+5. What is passed to the allowRegexes and blockRegexes keyword arguments? \\ regex strings to be allowed or disallowed
+
+6. What does inputStr(limit=3) do if blank input is entered three times? \\ retry error exception
+
+7. What does inputStr(limit=3, default='hello') do if blank input is entered three times? \\ returns 'hello' after 3 failed tries.
